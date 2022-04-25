@@ -1,0 +1,47 @@
+@import './_variables.scss';
+
+.exp-footer {
+  padding: $padding-lg-vertical $padding-md-horizontal;
+  background: $footer-background-color;
+  display: flex;
+  position: relative;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+
+  &.exp-footer--align-left ul {
+    justify-content: flex-start;
+  }
+
+  &.exp-footer--align-right ul {
+    justify-content: flex-end;
+  }
+
+  &.exp-footer--align-center ul {
+    justify-content: center;
+  }
+
+  #gdprBanner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.exp-footer__item {
+  margin-right: $padding-sm-horizontal;
+  display: inline-block;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

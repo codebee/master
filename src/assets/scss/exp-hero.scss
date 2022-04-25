@@ -1,0 +1,51 @@
+@import './_variables.scss';
+
+.exp-hero {
+  margin: 0;
+  padding: $padding-xl-vertical 0;
+  width: 100%;
+  height: $hero-height-lg;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.exp-hero__content {
+  flex: 1;
+  position: relative;
+  z-index: 1
+}
+
+.exp-hero__video {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.exp-hero__video__player {
+  flex: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+@media screen and (max-width: $break-md) {
+  .exp-hero {
+    min-height: $hero-height-md;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: $break-sm) {
+  .exp-hero {
+    min-height: auto;
+    height: auto;
+  }
+}

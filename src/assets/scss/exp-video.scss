@@ -1,0 +1,36 @@
+@import './_variables.scss';
+
+.exp-video {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+
+  &::before {
+    display: block;
+    content: '';
+  }
+
+  &.exp-video--ratio-16x9::before {
+    padding-top: 56.25%;
+  }
+
+  &.exp-video--ratio-4x3::before {
+    padding-top: 75%;
+  }
+
+  &.exp-video--ratio-1x1::before {
+    padding-top: 100%;
+  }
+
+  > iframe, > video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}

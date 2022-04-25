@@ -1,0 +1,13 @@
+@import './_variables.scss';
+
+.exp-button-link {
+  padding: $padding-md-vertical $padding-md-horizontal;
+  box-sizing: border-box;
+  border: 1px solid $btn-default-border-color;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  background: $btn-default-background-color;
+  white-space: nowrap;
+}

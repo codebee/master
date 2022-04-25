@@ -1,0 +1,77 @@
+@import './_variables.scss';
+
+.exp-social-sharer {
+  margin: 0;
+  padding: $padding-md-vertical $padding-md-horizontal;
+  background: $social-sharer-background-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.exp-social-sharer__image {
+  padding-right: $padding-md-horizontal;
+  line-height: 0;
+
+  img {
+    max-height: 100px;
+    max-width: 100%;
+  }
+}
+
+.exp-social-sharer__content__title {
+  margin: 0;
+}
+
+.exp-social-sharer__content__title + .exp-social-sharer__content__body {
+  margin-top: $padding-md-vertical;
+}
+
+.exp-social-sharer__content__body {
+  margin-bottom: 0;
+}
+
+.exp-social-sharer__icons {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  > a {
+    margin: 0 0 0 $padding-md-horizontal;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: $break-md) {
+  .exp-social-sharer {
+    flex-direction: column;
+  }
+
+  .exp-social-sharer__image {
+    display: none;
+  }
+
+  .exp-social-sharer__content {
+    text-align: center;
+  }
+
+  .exp-social-sharer__icons {
+    padding-right: $padding-md-horizontal;
+  }
+
+  .exp-social-sharer__content + .exp-social-sharer__icons {
+    padding-top: $padding-md-vertical;
+  }
+}
